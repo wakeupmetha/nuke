@@ -1,6 +1,6 @@
-# NukeTG - Telegram Message Deletion Bot
+hi@nometh.club or https://methisbusy.t.me
 
-A bot for deleting your own messages in Telegram chats by command.
+A script for deleting your own messages in Telegram chats by command.
 
 ## Installation
 
