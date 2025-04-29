@@ -15,6 +15,7 @@ API_ID=your_api_id
 API_HASH=your_api_hash
 PHONE=your_phone_number
 CHAT_IDS=chat_id1,chat_id2,chat_id3
+USER_ID=your_user_id
 ```
 
 To get `API_ID` and `API_HASH`:
@@ -23,6 +24,10 @@ To get `API_ID` and `API_HASH`:
 3. Go to "API development tools"
 4. Create a new application
 5. Copy `API_ID` and `API_HASH`
+
+To get your `USER_ID`, you can:
+1. Send a message to @userinfobot on Telegram
+2. The bot will reply with your user ID
 
 ## Usage
 
@@ -37,6 +42,6 @@ python anonim/nuke.py
 
 ## Important
 
-- The bot will only work with messages from the user whose ID is specified in the `MY_USER_ID` variable in the `nuke.py` file
+- The bot will only work with messages from the user whose ID is specified in the `USER_ID` variable in the `.env` file
 - Make sure you have permission to delete messages in the chats
 - Use with caution as message deletion is irreversible 

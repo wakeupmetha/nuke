@@ -13,7 +13,22 @@ API_ID = os.getenv('API_ID')
 API_HASH = os.getenv('API_HASH')
 PHONE = os.getenv('PHONE')
 CHAT_IDS = [chat_id.strip() for chat_id in os.getenv('CHAT_IDS', '').split(',') if chat_id.strip()]
-MY_USER_ID = 7015593873  # Your user ID
+
+# Get and validate USER_ID
+user_id = os.getenv('USER_ID')
+if not user_id:
+    print("Error: USER_ID is not set in .env file")
+    print("Please add your Telegram user ID to .env file")
+    print("You can get your ID by sending a message to @userinfobot in Telegram")
+    exit(1)
+
+try:
+    MY_USER_ID = int(user_id)
+except ValueError:
+    print(f"Error: USER_ID must be a number, got: {user_id}")
+    print("Please check your .env file and make sure USER_ID is correct")
+    exit(1)
+
 BATCH_SIZE = 5  # Number of messages to delete at once
 
 def format_chat_id(chat_id):
