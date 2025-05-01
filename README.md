@@ -1,4 +1,4 @@
-hi@nometh.club or https://methisbusy.t.me
+contact: @wakemeuprobot
 
 A script for deleting your own messages in Telegram chats by command.
 
