@@ -27,8 +27,9 @@ except ValueError:
     print(f"Error: USER_ID must be a number, got: {user_id}")
     print("Please check your .env file and make sure USER_ID is correct")
     exit(1)
-# number of posts deleted here!!!
-BATCH_SIZE = 10
+BATCH_SIZE = 20 # Number of messages deleted at a time
+DELAY_BETWEEN_BATCHES = 5 # Delay between deleting messages
+DEFAULT_MESSAGE_LIMIT = None # Message deletion limit ( no limit by default/set in chat)
 
 def format_chat_id(chat_id):
     """Formats chat ID into the correct format"""
@@ -153,8 +154,8 @@ async def delete_my_messages_in_chat(client, chat_info, message_limit=None):
                         print(f"Error deleting message {msg.id}: {str(e)}")
             
             if i + BATCH_SIZE < total_messages:
-                print(f"Waiting 10 seconds before next batch...")
-                await asyncio.sleep(10)
+                print(f"Waiting {DELAY_BETWEEN_BATCHES} seconds before next batch...")
+                await asyncio.sleep(DELAY_BETWEEN_BATCHES)
             
         print(f"\n{'='*50}")
         print(f"Deletion process completed in chat {chat_info['title']}")
