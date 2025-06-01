@@ -1,5 +1,10 @@
 # NUKE ME
 
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](
+https://www.python.org/downloads/release/python-3133/)
+[![Telegram](https://img.shields.io/badge/Telegram-Bot-blue.svg)](https://core.telegram.org/bots)
+[![Visual Studio Code](https://img.shields.io/badge/Editor-VSCode-blue.svg?logo=visual-studio-code)](https://code.visualstudio.com/)
+
 ## 📋 Навигация / Navigation
 
 - [🇷🇺 Русская версия](#-русская-версия)
@@ -12,13 +17,6 @@
 Скрипт для удаления ваших собственных сообщений в чатах Telegram по команде.
 
 ### Установка
-
-0.1 УСТАНОВИТЕ PYTHON!
-
-https://www.python.org/downloads/release/python-3133/
-
-И ВЫПОЛНЯЙТЕ ДЕЙСТВИЯ ЧЕРЕЗ VS CODE
-- https://code.visualstudio.com/
 
 1. Установите зависимости:
 ```bash
@@ -59,8 +57,8 @@ python anonim/nuke.py
 ### Важно
 
 - Бот будет работать только с сообщениями пользователя, чей ID указан в переменной `USER_ID` в файле `.env`
-- Убедитесь, что у вас есть разрешение на удаление сообщений в чатах
 - Используйте с осторожностью, так как удаление сообщений необратимо
+- ⚠️ БУДТЕ АККУРАТНЫ С ИСПОЛЬЗОВАНИЕМ СКРИПТА С НОВОРЕГ-Аккаунтами!!!
 
 ---
 
@@ -116,7 +114,6 @@ python anonim/nuke.py
 ### Important
 
 - The bot will only work with messages from the user whose ID is specified in the `USER_ID` variable in the `.env` file
-- Make sure you have permission to delete messages in the chats
 - Use with caution as message deletion is irreversible
-```
+- ⚠️ Be careful with the use of SCRIPT with new-Accounts!!!!
         
