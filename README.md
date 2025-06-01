@@ -57,6 +57,13 @@ python anonim/nuke.py
 - `nuke` - will delete all your messages in the chat
 - `nuke 100` - will delete the last 100 of your messages in the chat
 
+3. Now you can more easily change how many posts you want to delete at a time, change the interval between deletions or the default number of posts to delete
+```bash
+BATCH_SIZE = 20 # Number of messages deleted at a time
+DELAY_BETWEEN_BATCHES = 5 # Delay between deleting messages
+DEFAULT_MESSAGE_LIMIT = None # Message deletion limit ( no limit by default/set in chat)
+```
+
 ### Important
 
 - The bot will only work with messages from the user whose ID is specified in the `USER_ID` variable in the `.env` file
@@ -107,6 +114,13 @@ python anonim/nuke.py
 2. В любом чате, где вы хотите удалить сообщения, отправьте команду:
 - `nuke` - удалит все ваши сообщения в чате
 - `nuke 100` - удалит последние 100 ваших сообщений в чате
+
+3. Теперь можете легче менять сколько сообщений вы хотите удалять за раз, менять промежуток между удалением или количество удаляемых сообщений по умолчанию
+```bash
+BATCH_SIZE = 20 # Number of messages deleted at a time
+DELAY_BETWEEN_BATCHES = 5 # Delay between deleting messages
+DEFAULT_MESSAGE_LIMIT = None # Message deletion limit ( no limit by default/set in chat)
+```
 
 ### Важно
 
