@@ -9,10 +9,60 @@ https://www.python.org/downloads/release/python-3133/)
 [![Video guide how to use](https://durka.lol/OMBPWcJ)](https://nometh.club/assets/nuketg-lrbW8edQ.mp4)
 
 
-## 📋 Навигация / Navigation
+## 📋 Navigation
 
-- [🇷🇺 Русская версия](#-русская-версия)
 - [🇺🇸 English Version](#-english-version)
+- [🇷🇺 Русская версия](#-русская-версия)
+
+
+  ## 🇺🇸 English Version
+
+A script for deleting your own messages in Telegram chats by command.
+
+### Installation
+
+1. Install dependencies:
+```bash
+pip install -r anonim/requirements.txt
+```
+
+2. Create a `.env` file in the project root directory with the following content:
+```
+API_ID=your_api_id
+API_HASH=your_api_hash
+PHONE=your_phone_with_+
+USER_ID=telegram_user_id
+CHAT_IDS=chat_id (where you want to delete messages)
+```
+
+To get `API_ID` and `API_HASH`:
+1. Go to https://my.telegram.org
+2. Log in to your account
+3. Go to "API development tools"
+4. Create a new application
+5. Copy `API_ID` and `API_HASH`
+
+To get your `USER_ID`, you can:
+1. Send a message to @userinfobot on Telegram
+2. The bot will reply with your user ID
+
+### Usage
+
+1. Start the bot:
+```bash
+python anonim/nuke.py
+```
+
+2. In any chat where you want to delete messages, send the command:
+- `nuke` - will delete all your messages in the chat
+- `nuke 100` - will delete the last 100 of your messages in the chat
+
+### Important
+
+- The bot will only work with messages from the user whose ID is specified in the `USER_ID` variable in the `.env` file
+- Use with caution as message deletion is irreversible
+- ⚠️ Be careful with the use of SCRIPT with new-Accounts!!!!
+
 
 ---
 
@@ -64,60 +114,4 @@ python anonim/nuke.py
 - Используйте с осторожностью, так как удаление сообщений необратимо
 - ⚠️ БУДТЕ АККУРАТНЫ С ИСПОЛЬЗОВАНИЕМ СКРИПТА С НОВОРЕГ-Аккаунтами!!!
 
----
-
-## 🇺🇸 English Version
-
-A script for deleting your own messages in Telegram chats by command.
-
-### Installation
-
-0.1 INSTALL PYTHON!
-
-https://www.python.org/downloads/release/python-3133/
-
-AND EXECUTE THE ACTIONS VIA VS CODE
-- https://code.visualstudio.com/
-
-1. Install dependencies:
-```bash
-pip install -r anonim/requirements.txt
-```
-
-2. Create a `.env` file in the project root directory with the following content:
-```
-API_ID=your_api_id
-API_HASH=your_api_hash
-PHONE=your_phone_with_+
-USER_ID=telegram_user_id
-CHAT_IDS=chat_id (where you want to delete messages)
-```
-
-To get `API_ID` and `API_HASH`:
-1. Go to https://my.telegram.org
-2. Log in to your account
-3. Go to "API development tools"
-4. Create a new application
-5. Copy `API_ID` and `API_HASH`
-
-To get your `USER_ID`, you can:
-1. Send a message to @userinfobot on Telegram
-2. The bot will reply with your user ID
-
-### Usage
-
-1. Start the bot:
-```bash
-python anonim/nuke.py
-```
-
-2. In any chat where you want to delete messages, send the command:
-- `nuke` - will delete all your messages in the chat
-- `nuke 100` - will delete the last 100 of your messages in the chat
-
-### Important
-
-- The bot will only work with messages from the user whose ID is specified in the `USER_ID` variable in the `.env` file
-- Use with caution as message deletion is irreversible
-- ⚠️ Be careful with the use of SCRIPT with new-Accounts!!!!
-        
+---        
