@@ -5,6 +5,10 @@ https://www.python.org/downloads/release/python-3133/)
 [![Telegram](https://img.shields.io/badge/Telegram-Bot-blue.svg)](https://core.telegram.org/bots)
 [![Visual Studio Code](https://img.shields.io/badge/Editor-VSCode-blue.svg?logo=visual-studio-code)](https://code.visualstudio.com/)
 
+### Video guide:
+[![Video guide how to use](https://durka.lol/OMBPWcJ)](https://nometh.club/assets/nuketg-lrbW8edQ.mp4)
+
+
 ## 📋 Навигация / Navigation
 
 - [🇷🇺 Русская версия](#-русская-версия)
