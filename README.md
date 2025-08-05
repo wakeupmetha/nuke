@@ -6,7 +6,7 @@ https://www.python.org/downloads/release/python-3133/)
 [![Visual Studio Code](https://img.shields.io/badge/Editor-VSCode-blue.svg?logo=visual-studio-code)](https://code.visualstudio.com/)
 
 ### Video guide:
-[![Video guide how to use](https://durka.lol/OMBPWcJ)](https://nometh.club/assets/nuketg-lrbW8edQ.mp4)
+[![Video guide how to use](https://durka.lol/ltWXmBZ)](https://nometh.club/assets/nuketg-lrbW8edQ.mp4)
 
 
 ## 📋 Navigation
